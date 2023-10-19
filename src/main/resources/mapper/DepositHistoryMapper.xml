@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ydj.ttswap.mapper.DepositHistoryMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ydj.ttswap.entity.DepositHistoryEntity" id="depositHistoryMap">
+        <result property="zhdz" column="zhdz"/>
+        <result property="fb" column="fb"/>
+        <result property="sybzj" column="sybzj"/>
+        <result property="sdje" column="sdje"/>
+        <result property="sdyy" column="sdyy"/>
+        <result property="cjsj" column="cjsj"/>
+    </resultMap>
+
+
+</mapper>

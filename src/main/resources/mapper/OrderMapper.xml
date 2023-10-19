@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ydj.ttswap.mapper.OrderMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ydj.ttswap.entity.OrderEntity" id="orderMap">
+        <result property="id" column="id"/>
+        <result property="bd" column="bd"/>
+        <result property="bsdz" column="bsdz"/>
+        <result property="yhdz" column="yhdz"/>
+        <result property="zt" column="zt"/>
+        <result property="mc1" column="mc1"/>
+        <result property="sl1" column="sl1"/>
+        <result property="mc2" column="mc2"/>
+        <result property="sl2" column="sl2"/>
+        <result property="cjsj" column="cjsj"/>
+        <result property="xgsj" column="xgsj"/>
+    </resultMap>
+
+
+</mapper>

@@ -1,0 +1,45 @@
+server:
+  port: 12000
+application:
+  profile: E:\Apache24\htdocs\imgsave  #C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\ttswap # /mydata/nginx/html/imgsave
+spring:
+  datasource:
+    username: root
+    password: passw0rd
+    url: jdbc:mysql://localhost:3306/ttswap?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: ttswap
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 30MB
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  mail:
+      host: smtp.qq.com     # 配置 SMTP 服务器地址
+      username: beifengnanxing@qq.com    # 发送者邮箱，已开通POP3/SMTP服务的邮箱，也就是你自己的
+      password: pxqzcbcuqvcdefab      # 配置密码，注意不是真正的密码，而是刚刚申请到的授权码
+      nickname: TTSWAP    # 发送人昵称
+      port: 587     # 端口号465或587（QQ邮箱发送邮件仅支持587端口协议）
+      default-encoding: UTF-8   # 默认的邮件编码为UTF-8
+      properties:    # 配置SSL 加密工厂
+        mail:
+          smtp:
+            socketFactoryClass: javax.net.ssl.SSLSocketFactory
+          debug: true   #表示开启 DEBUG 模式，这样，邮件发送过程的日志会在控制台打印出来，方便排查错误
+
+mybatis-plus:
+  mapperLocations: classpath:mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: ljsc
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    call-setters-on-nulls: true
+    # 全局逻辑删除的实体字段名(since 3.3.0,配置后可以忽略不配置步骤2)
+#      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+#      logic-not-delete-value: 1 # 逻辑未删除值(默认为 0)

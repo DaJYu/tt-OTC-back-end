@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ydj.ttswap.mapper.CoinDealerApplyMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ydj.ttswap.entity.CoinDealerApplyEntity" id="coinDealerApplyMap">
+        <result property="id" column="id"/>
+        <result property="bsqb" column="bsqb"/>
+        <result property="sqlb" column="sqlb"/>
+        <result property="fbid" column="fbid"/>
+        <result property="zfr" column="zfr"/>
+        <result property="skzhid" column="skzhid"/>
+        <result property="zt" column="zt"/>
+        <result property="shyj" column="shyj"/>
+        <result property="sqsj" column="sqsj"/>
+        <result property="bgsj" column="bgsj"/>
+    </resultMap>
+
+
+</mapper>

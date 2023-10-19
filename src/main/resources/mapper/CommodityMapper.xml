@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ydj.ttswap.mapper.CommodityMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.ydj.ttswap.entity.CommodityEntity" id="commodityMap">
+        <result property="id" column="id"/>
+        <result property="fbid" column="fbid"/>
+        <result property="fbmc" column="fbmc"/>
+        <result property="bzid" column="bzid"/>
+        <result property="bzmc" column="bzmc"/>
+        <result property="xnblj" column="xnblj"/>
+        <result property="bzdj" column="bzdj"/>
+        <result property="bzsl" column="bzsl"/>
+        <result property="zgxe" column="zgxe"/>
+        <result property="zdxe" column="zdxe"/>
+        <result property="jzsj" column="jzsj"/>
+        <result property="cjsl" column="cjsl"/>
+        <result property="sdsl" column="sdsl"/>
+        <result property="kcsl" column="kcsl"/>
+        <result property="cslx" column="cslx"/>
+        <result property="zt" column="zt"/>
+        <result property="cjsj" column="cjsj"/>
+        <result property="gxsj" column="gxsj"/>
+    </resultMap>
+
+
+</mapper>
